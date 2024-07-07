@@ -1,0 +1,17 @@
+ubuntu $ cat command-history.txt 
+    1  apt-get update
+    2  halt
+    3  curl -sfL https://get.k3s.io | sh -
+    4  curl -sfL https://get.k3s.io | K3S_URL=https://myserver:6443 K3S_TOKEN=mynodetoken sh -
+    5  kubectl get nodes
+    6  vim nginx-deployment.yaml
+    7  vim nginx-service.yaml
+    8  vim nginx-deployment.yaml
+    9  vim nginx-service.yaml
+   10  vim a.sh
+   11  chmod +x a.sh
+   12  ./a.sh
+   13  k get nodes -o wide
+   14  kubectl get nodes -o wide
+   15  kubectl get services
+   16  history > command-history.txt
