@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: myapp-service
+spec:
+  type: NodePort  # Exposes the service on each Node's IP at a static port (NodePort)
+  selector:
+    app: myapp
+  ports:
+  - protocol: TCP
+    port: 80  # Port exposed on the service
+    targetPort: 80  # Port on the container where the service should forward traffic
+    nodePort: 30080  # Optional: Port accessible externally on each node

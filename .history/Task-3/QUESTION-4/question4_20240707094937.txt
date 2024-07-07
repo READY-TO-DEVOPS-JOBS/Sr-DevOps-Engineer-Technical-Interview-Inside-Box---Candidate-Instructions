@@ -1,0 +1,2 @@
+# Explain the process of building a Docker image and
+#deploying it to a Kubernetes cluster
