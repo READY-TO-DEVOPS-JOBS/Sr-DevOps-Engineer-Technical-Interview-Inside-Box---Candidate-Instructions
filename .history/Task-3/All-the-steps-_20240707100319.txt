@@ -1,0 +1,26 @@
+# Use the official NGINX image as a base
+FROM nginx:latest
+
+# Copy custom index.html file to NGINX html directory
+COPY index.html /usr/share/nginx/html/index.html
+
+# Expose port 80
+EXPOSE 80
+
+
+Explanation:
+FROM nginx
+:
+
+This line specifies that we're basing our image on the latest NGINX image available on Docker Hub.
+COPY index.html /usr/share/nginx/html/index.html:
+
+Copies the index.html file from your local directory into the NGINX default HTML directory (/usr/share/nginx/html/).
+EXPOSE 80:
+
+Opens port 80, which is the default port for HTTP traffic in NGINX.
+Steps to Use:
+Create index.html:
+
+Create an index.html file in the same directory as your Dockerfile. You can put any HTML content you want in this file.
+Example index.html:
